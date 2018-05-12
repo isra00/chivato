@@ -16,7 +16,7 @@ function chivar()
 	}
 
 	$env = (false !== strpos(gethostname(), '.secureserver.net'))
-			? 'dev' : 'prod';
+			? 'prod' : 'dev';
 
 	add_filter('language_attributes', function($attr) use ($env)
 	{
